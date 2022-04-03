@@ -1,0 +1,22 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint"],
+    "parserOptions": {
+        "project": "./tsconfig.json"
+    },
+    "rules": {
+        "@typescript-eslint/naming-convention": ["error", {
+            // default
+            "selector": "default",
+            "format": ["camelCase"],
+            "leadingUnderscore": "forbid",
+            "trailingUnderscore": "forbid"
+        },
+        {
+            // const global variables can be UPPER_CASE
+            "selector": "variable",
+            "modifiers": ["const", "global"],
+            "format": ["camelCase", "UPPER_CASE"]
+        }]
+    }
+}
