@@ -9,8 +9,6 @@
             // default
             "selector": "default",
             "format": ["camelCase"],
-            "leadingUnderscore": "forbid",
-            "trailingUnderscore": "forbid"
         },
         {
             // const global variables can be UPPER_CASE
